@@ -4,6 +4,12 @@ The application assumes a MySQL database named technical_assessment, with two ta
 with a one-to-many relationship between the two tables.  (Each request detail record has a foreign key referencing the relevant
 request header.)
 
+Database User:
+
+This application expects a MySQL user with the name 'basicUser' at localhost.  This user must also be identified with
+'mysql_native_password', due to a compatibility problem between MySQL's new version of authentication, and the way the
+mysqli connector handles passwords.
+
 Database Structure:
 
 request_header: 
