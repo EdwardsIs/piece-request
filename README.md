@@ -6,7 +6,8 @@ request header.)
 
 Database Structure:
 
-request_header: 
+request_header:
+
 header_id (int primary key)
 customer_number (varchar(45))
 customer_name (varchar(100))
