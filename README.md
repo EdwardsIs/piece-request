@@ -1,3 +1,16 @@
+File Overview
+-------------------
+The html directory of this repo contains a copy of the html directory running on my apache server, which contains the entire source.
+
+Input Assumptions
+-------------------
+When developing the interface for this application, I assumed that the user would be entering their information for the first time,
+and having it saved, or possibly checked against previously entered information in another database.  Also, it is assumed that 
+customer number would be completely numeric, (no dashes, dots, or letters), and that email would have to contain both an @ 
+symbol, and a period, (to signify the address included a domain.)  Lastly, the phone input expects a purely numerical entry as 
+well, and doesn't accept any characters aside from 0-9.  For the piece requests, the application simply accepts strings for 
+the pattern name and piece type, but takes only a non-negative integer for the quantity.
+
 Database Assumptions
 --------------------
 The application assumes a MySQL database named technical_assessment, with two tables named request_header, and request_detail, 
