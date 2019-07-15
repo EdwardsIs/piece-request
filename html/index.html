@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Piece Request</title>
+        <meta charset="utf-8">
+
+        <!-- CDN imports for using bootstrap -->
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+    </head>
+    <body class="container bg-light">
+        <div class="row"><h1>Piece Request Form</h1></div>
+        <form action="/php/request.php"
+        method="POST" id="main">
+            <div class="row"><h2>Customer Information</h2></div>
+            <div class="row">
+                <div class="col-sm-2"><label>Customer Number:</label></div>
+                <div class="col-sm-2"><input type="text" name="number" id="number" required class="form-control"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"><label>Name:</label></div>
+                <div class="col-sm-2"><input type="text" name="name" id="name" required class="form-control"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"><label>Email Address:</label></div>
+                <div class="col-sm-2"><input type="text" name="email" id="email" required class="form-control"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"><label>Phone:</label></div>
+                <div class="col-sm-2"><input type="text" name="phone" id="phone" class="form-control"></div>
+            </div>
+            <div class="row"><h2>New Piece Request</h2></div>
+            <div class="row">
+                <div class="col-sm-2"><label>Piece Type:</label></div>
+                <div class="col-sm-2"><input type="text" name="piece_type" id="piece_type" class="form-control"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"><label>Pattern Name:</label></div>
+                <div class="col-sm-2"><input type="text" name="pattern_name" id="pattern_name" class="form-control"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"><label>Quantity:</label></div>
+                <div class="col-sm-2"><input type="number" name="quantity" id="quantity" class="form-control"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"><button type="button" onclick="addPiece()" class="btn btn-secondary">Add Request</button></div>
+            </div>
+            <input hidden name="types[]" id="type1">
+            <input hidden name="types[]" id="type2">
+            <input hidden name="types[]" id="type3">
+            <input hidden name="patterns[]" id="pattern1">
+            <input hidden name="patterns[]" id="pattern2">
+            <input hidden name="patterns[]" id="pattern3">
+            <input hidden name="quantities[]" id="quantity1">
+            <input hidden name="quantities[]" id="quantity2">
+            <input hidden name="quantities[]" id="quantity3">
+            <div class="row mt-2"></div>
+            <div class="row">
+                <div class="col-sm-2"><button type="button" onclick="checkForm()" class="btn btn-primary">Submit</button></div>
+            </div>
+            <div class="row mt-2"></div>
+            <div class="row">
+                <p class="text-success" id="confirmation"></p>
+            </div>
+        </form>
+    </body>
+    <script src="js/main.js"></script>
+</html>
