@@ -1,6 +1,7 @@
 File Overview
 -------------------
-The html directory of this repo contains a copy of the html directory running on my apache server, which contains the entire source.  Also, the program imports the neccesary code for bootstrap from some CDNs, so an internet connection will be neccesary while running the application.
+The html directory of this repo contains a copy of the html directory running on my apache server, which contains the entire source.  Also, the program imports the neccesary code for bootstrap from some CDNs, so an internet connection will be neccesary while running the application.  The hydrate.sql file contains all the SQL statements neccesary to prepare a MySQL database to
+run the application locally.
 
 Input Assumptions
 -------------------
