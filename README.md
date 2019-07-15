@@ -1,6 +1,6 @@
 File Overview
 -------------------
-The html directory of this repo contains a copy of the html directory running on my apache server, which contains the entire source.
+The html directory of this repo contains a copy of the html directory running on my apache server, which contains the entire source.  Also, the program imports the neccesary code for bootstrap from some CDNs, so an internet connection will be neccesary while running the application.
 
 Input Assumptions
 -------------------
